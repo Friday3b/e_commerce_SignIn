@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Responsive Layout</title>
+</head>
+
+<body class="bg-white flex items-center justify-center w-full min-h-screen px-4 sm:px-6 md:px-8">
+
+    <!-- umumi -->
+    <div class="w-full max-w-[1304px] h-auto lg:h-[781px] p-4 sm:p-8 gap-8 rounded-lg shadow-md grid grid-cols-1 lg:grid-cols-2 items-center">
+
+        <!-- Sol teref -->
+        <div id="image" class="w-full flex justify-center lg:justify-start">
+            <img 
+                class="w-full h-auto max-w-full sm:w-[400px] md:w-[600px] lg:w-[805px] xl:w-[805px] object-contain" 
+                src="https://s3-alpha-sig.figma.com/img/75f3/94c0/a1c7dc5b68a42239311e510f54d8cd59?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qgVqGyTrtAwgXM6WM8rsoQt2b9Z3T3LggfpArevSDXb-IA2JfkNJI-Z~pEPsZe-~7slErM12n9kA0EdC8Rhd3IUTpf6WC1eBA5sW4zzNXfN5k5h4iQOlWZCbjADMR3jLgsBeoWHor3l6EuMvxACWmAYW7QTGEg0DFkPEkZJghFjRpCqU6bIYL33hArCH0vKlqCmBhFi55QqOKAm0aYesbof~y4VpxFa2vmv4-a1toQHensNo4Oy60NBWSex-FdrdGIEe6rkFfddQW-1YiCIToocs~lMka6vzBWV-0xQF6YbsFsjfMaEj9LCC6by-we0yKoZ0L2PGA8awki2G9hYCYw__" 
+                alt="Responsive Image"
+            >
+        </div>
+        
+        
+
+        <!-- Sağ teref -->
+        <div id="form" 
+             class="flex flex-col items-center justify-center p-4 sm:p-8 bg-white rounded-lg shadow-lg w-full max-w-[370px] h-auto lg:h-[370px] ">
+
+            <h2 class="text-2xl font-bold text-black mb-2 text-center">Log in to Exclusive</h2>
+            <p class="text-sm text-black mb-6 text-center">Enter your details below</p>
+
+            <form class="space-y-4 w-full">
+                <!-- Email -->
+                <div>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Email"
+                        class="mt-1 block w-full p-2 border-b border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    >
+                </div>
+
+                <!-- Parol -->
+                <div>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        placeholder="Password"
+                        class="mt-1 block w-full p-2 border-b border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    >
+                </div>
+
+                <!-- btn -->
+                <button 
+                    type="submit" 
+                    id="btn"
+                    class="w-full bg-red-500 text-white py-2 rounded-md shadow-md hover:bg-red-700 transition"
+                >
+                    Login
+                </button>
+
+                <!-- metn hissesi -->
+                <p class="text-sm text-gray-500 mt-6 text-center">
+                    Don't have an account?
+                    <a href="#" class="text-black font-medium hover:underline">Register</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
